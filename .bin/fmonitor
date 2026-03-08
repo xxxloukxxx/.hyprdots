@@ -13,4 +13,5 @@ case "$choice" in
    *) exit ;;
 esac
 
-pkill hyprpaper && hyprpaper &
+pkill hyprpaper
+hyprpaper &
