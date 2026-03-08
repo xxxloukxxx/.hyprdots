@@ -12,3 +12,5 @@ case "$choice" in
    Right) sh -c "hyprctl -q keyword monitor $left,disable && hyprctl -q keyword monitor $right,disable && hyprctl -q keyword monitor $right,prefered,auto,auto" & ;;
    *) exit ;;
 esac
+
+pkill hyprpaper && hyprpaper &
